@@ -1,5 +1,5 @@
 h3{   
-	margin-top: 20px; 
+	margin-top: 0px; 
 	text-align: center;
 
  } 
@@ -9,4 +9,28 @@ h3{
 
   .inputf{
   	width: 20;
-  }
+  } 
+
+  .buttoncenter{  
+
+   } 
+   .logo{  
+   	height: 500px; 
+   	width: 500px; 
+   padding-left: 20px;
+    } 
+
+    .heading{  
+      text-align: center;  
+      font-size: 50px;
+      font-family: 'Libre Baskerville', serif;
+     } 
+
+  .formback{   
+    margin-top: 0px;
+    background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+   } 
+
+   .navback{  
+    background-color: #795548;
+    }
