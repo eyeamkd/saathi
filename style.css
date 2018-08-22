@@ -28,9 +28,14 @@ h3{
 
   .formback{   
     margin-top: 0px;
-    background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
    } 
 
    .navback{  
     background-color: #795548;
-    }
+    } 
+
+    .buttoncenter{  
+      display: flex; 
+      justify-content: center;
+     }

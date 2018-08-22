@@ -8,13 +8,15 @@
     <!-- Bootstrap CSS --> 
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="/Users/kunaldubey/Desktop/Projects/Saathi/saathi/style.css"> 
+    <link rel="stylesheet" href="/Users/kunaldubey/Desktop/Projects/Saathi/saathi/style.css">  
 
-    <title class="heading">Verbal Screening</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
+
+    <title class="heading">TB Treatment Form</title>
   </head>
   <body> 
 
-		  <nav class="navbar navbar-light  mb-0" style="background-color: #8D6E63;">
+		  <nav class="navbar navbar-dark bg-primary">
 		  <a class="navbar-brand " style="color: white;" href="#">Saathi Web Application</a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
@@ -52,7 +54,7 @@
 <div class="formback mt-0"> 
 	<br/> 
 	<br/>	
-    <h3 class="heading" >Verbal Screening Form</h3>   
+    <h3 class="heading" >TB Treatment Form</h3>   
     
 
 		    <div class="container "> 
@@ -64,19 +66,20 @@
 			  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
 			</div>  
 		</div>
-		</div> 
+		</div>  
 
-			<div class="container "> 
-		    	<div class="row  mt-4 inputf "> 
-		    		<div class="col-3 "></div>
+		<div class="container "> 
+		    	<div class="row-4  mt-4">
 		    <div class="input-group mb-3">
 			  <div class="input-group-prepend">
-			    <span class="input-group-text" id="inputGroup-sizing-default">Name of the District</span>
+			    <span class="input-group-text" id="inputGroup-sizing-default ">Name of the District</span>
 			  </div>
 			  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-			</div>   
+			</div>  
 		</div>
-		</div>   
+		</div> 
+
+			
 
 			<div class="container "> 
 		    	<div class="row-4  mt-4">
@@ -87,192 +90,1441 @@
 			  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
 			</div>  
 		</div>
-		</div>  
+		</div>   
+
+
 
 		<div class="container "> 
 		    	<div class="row-4  mt-4">
 		    <div class="input-group mb-3">
 			  <div class="input-group-prepend">
-			    <span class="input-group-text" id="inputGroup-sizing-default">Name of the Facility</span>
+			    <span class="input-group-text" id="inputGroup-sizing-default">Name of the TB UNIT</span>
 			  </div>
 			  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
 			</div>  
 		</div>
 		</div>  
 
+			<div class="container border border-secondary">  
+
 			<div class="container"> 
-				<div class="row-4 mt-4">
-			<div class="dropdown">
-			  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			    Number of Children Attended OPD
-			  </button>
-			  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-				    <div class="dropdown-item input-group input-group-sm mb-3">
-				  <div class="input-group-prepend">
-				    <span class="input-group-text" id="inputGroup-sizing-sm">Male 0-4 YRS</span>
-				  </div>
-				  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-				</div>
-			     <div class="dropdown-item input-group input-group-sm mb-3">
-				  <div class="input-group-prepend">
-				    <span class="input-group-text" id="inputGroup-sizing-sm">Male 5-14 YRS</span>
-				  </div>
-				  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-				</div> 
-				 <div class="dropdown-item input-group input-group-sm mb-3">
-				  <div class="input-group-prepend">
-				    <span class="input-group-text" id="inputGroup-sizing-sm">Female 0-4 YRS</span>
-				  </div>
-				  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-				</div> 
-				 <div class="dropdown-item input-group input-group-sm mb-3">
-				  <div class="input-group-prepend">
-				    <span class="input-group-text" id="inputGroup-sizing-sm">Female 5-14 YRS</span>
-				  </div>
-				  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-				</div>
-			  </div>
+				<div class="row-4 mt-4">  
+					 
+						<div class="input-group mb-3">
+						  <div class="input-group-prepend">
+						    <span class="input-group-text" id="inputGroup-sizing-default">Name of the PHI where treatment started</span>
+						  </div>
+						  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+						</div>
+				 
 			</div> 
+		</div> 
+		<div class="container"> 
+			<div class="row-4 mt-4"> 
+				<select class="custom-select">
+				  <option selected>Case Identified Place</option>
+				  <option value="public">Public Sector</option>
+				  <option value="private">Private Sector</option>
+				</select> 
 			</div> 
-			</div>
-
+		</div> 
 
 		<div class="container"> 
-			<div class="row-4 mt-4">
-		<div class="dropdown">
-		  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		    Number of Children screened for TB using tool
-		  </button>
-		  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-			    <div class="dropdown-item input-group input-group-sm mb-3">
-			  <div class="input-group-prepend">
-			    <span class="input-group-text" id="inputGroup-sizing-sm">Male 0-4 YRS</span>
-			  </div>
-			  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-			</div>
-		     <div class="dropdown-item input-group input-group-sm mb-3">
-			  <div class="input-group-prepend">
-			    <span class="input-group-text" id="inputGroup-sizing-sm">Male 5-14 YRS</span>
-			  </div>
-			  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-			</div> 
-			 <div class="dropdown-item input-group input-group-sm mb-3">
-			  <div class="input-group-prepend">
-			    <span class="input-group-text" id="inputGroup-sizing-sm">Female 0-4 YRS</span>
-			  </div>
-			  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-			</div> 
-			 <div class="dropdown-item input-group input-group-sm mb-3">
-			  <div class="input-group-prepend">
-			    <span class="input-group-text" id="inputGroup-sizing-sm">Female 5-14 YRS</span>
-			  </div>
-			  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-			</div>
-		  </div>
-		</div> 
-		</div> 
-		</div>
+				<div class="row-4 mt-4">  
+					 
+						<div class="input-group mb-3">
+						  <div class="input-group-prepend">
+						    <span class="input-group-text" id="inputGroup-sizing-default">Name of the facility where identified</span>
+						  </div>
+						  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+						</div> 
 
-		<div class="container"> 
-			<div class="row-4 mt-4">
-		<div class="dropdown">
-		  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		    Number of Children having symptoms of TB
-		  </button>
-		  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-			    <div class="dropdown-item input-group input-group-sm mb-3">
-			  <div class="input-group-prepend">
-			    <span class="input-group-text" id="inputGroup-sizing-sm">Male 0-4 YRS</span>
-			  </div>
-			  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-			</div>
-		     <div class="dropdown-item input-group input-group-sm mb-3">
-			  <div class="input-group-prepend">
-			    <span class="input-group-text" id="inputGroup-sizing-sm">Male 5-14 YRS</span>
-			  </div>
-			  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
 			</div> 
-			 <div class="dropdown-item input-group input-group-sm mb-3">
-			  <div class="input-group-prepend">
-			    <span class="input-group-text" id="inputGroup-sizing-sm">Female 0-4 YRS</span>
-			  </div>
-			  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-			</div> 
-			 <div class="dropdown-item input-group input-group-sm mb-3">
-			  <div class="input-group-prepend">
-			    <span class="input-group-text" id="inputGroup-sizing-sm">Female 5-14 YRS</span>
-			  </div>
-			  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-			</div>
-		  </div>
 		</div> 
-		</div> 
-		</div>
+	</div>
+	<!--PHI ENDED--> 
 
-		<div class="container"> 
-			<div class="row-4 mt-4">
-		<div class="dropdown">
-		  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		    Number of presumptive TB cases identified by doctor
-		  </button>
-		  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-			    <div class="dropdown-item input-group input-group-sm mb-3">
-			  <div class="input-group-prepend">
-			    <span class="input-group-text" id="inputGroup-sizing-sm">Male 0-4 YRS</span>
-			  </div>
-			  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-			</div>
-		     <div class="dropdown-item input-group input-group-sm mb-3">
-			  <div class="input-group-prepend">
-			    <span class="input-group-text" id="inputGroup-sizing-sm">Male 5-14 YRS</span>
-			  </div>
-			  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-			</div> 
-			 <div class="dropdown-item input-group input-group-sm mb-3">
-			  <div class="input-group-prepend">
-			    <span class="input-group-text" id="inputGroup-sizing-sm">Female 0-4 YRS</span>
-			  </div>
-			  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-			</div> 
-			 <div class="dropdown-item input-group input-group-sm mb-3">
-			  <div class="input-group-prepend">
-			    <span class="input-group-text" id="inputGroup-sizing-sm">Female 5-14 YRS</span>
-			  </div>
-			  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-			</div>
-		  </div>
-		</div> 
-		</div> 
-		</div>
-
-		<div class="container "> 
-		    	<div class="row  mt-4 inputf "> 
-		    		<div class="col-3 "></div>
+	<div class="container "> 
+		    	<div class="row-4  mt-4">
 		    <div class="input-group mb-3">
 			  <div class="input-group-prepend">
-			    <span class="input-group-text" id="inputGroup-sizing-default">No. of presumptive TB cases sent for lab/CBNAAT testing</span>
+			    <span class="input-group-text" id="inputGroup-sizing-default">Name of the Child</span>
 			  </div>
 			  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-			</div>   
+			</div>  
+		</div>
+		</div>    
+          
+          <div class="container">  
+          	<div class="row-4 mt-4">   
+          <span class="input-group-text" id="inputGroup-sizing-default ">Sex of the Child 
+          
+          	<div class="form-check form-check-inline pl-4">
+		  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+		  <label class="form-check-label" for="inlineRadio1">Male</label>
+		</div>
+		<div class="form-check form-check-inline">
+		  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+		  <label class="form-check-label" for="inlineRadio2">Female</label>
+		</div>
+		
+          </span>
+          		
+          	</div>
+          </div> 
+
+         
+         <div class="container "> 
+		    	<div class="row-4  mt-4">
+		    <div class="input-group mb-3">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="inputGroup-sizing-default">Age of the Child</span>
+			  </div>
+			  <input type="text" placeholder="DD/MM/YYYY" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			</div>  
+		</div>
+		</div>    
+
+		
+		       
+
+		<div class="container "> 
+		    	<div class="row-4  mt-4">
+		    <div class="input-group mb-3">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="inputGroup-sizing-default">NIKSHAY ID</span>
+			  </div>
+			  <input type="text"  class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			</div>  
+		</div>
+		</div>    
+
+
+		<div class="container pr-3 "> 
+		    	<div class="row-4  mt-4"> 
+		    		<div class="col-3 pl-0"> 
+		    			<div class="input-group mb-3 pr-2">
+								  <div class="input-group-prepend ">
+								    <span class="input-group-text pr-2" id="inputGroup-sizing-default">Weight of the Child</span>
+								  </div>
+								  <input type="text" placeholder="in kgs" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+						</div>  
+					</div>
+				</div> 
+		</div>
+       
+
+       <div class="container pr-3 "> 
+		    	<div class="row-4  mt-4"> 
+		    		<div class="col-3 pl-0"> 
+		    			<div class="input-group mb-3 pr-2">
+								  <div class="input-group-prepend ">
+								    <span class="input-group-text pr-2" id="inputGroup-sizing-default">Height of the Child</span>
+								  </div>
+								  <input type="text" placeholder="in cms" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+						</div>  
+					</div>
+				</div> 
+		</div>
+     
+     
+     <div class="container "> 
+		    	<div class="row-4  mt-4">
+		    <div class="input-group mb-3">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="inputGroup-sizing-default">Name of the Parent/Gaurdian</span>
+			  </div>
+			  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			</div>  
+		</div>
+		</div>    
+
+		 <div class="container "> 
+		    	<div class="row-4  mt-4">
+		    <div class="input-group mb-3">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="inputGroup-sizing-default">Contact Number of the Parent/Gaurdian</span>
+			  </div>
+			  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			</div>  
+		</div>
+		</div>     
+
+		 <div class="container "> 
+		    	<div class="row-4  mt-4">
+						    <div class="input-group">
+				  <div class="input-group-prepend">
+				    <span class="input-group-text">Address of the child</span>
+				  </div>
+				  <textarea class="form-control" aria-label="With textarea"></textarea>
+				</div>
+		</div>
+		</div>    
+
+ 		
+ 		<div class="container "> 
+		    	<div class="row-4  mt-4">
+		    <div class="input-group mb-3">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="inputGroup-sizing-default">Name of the Town / Mandal of the child</span>
+			  </div>
+			  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			</div>  
+		</div>
+		</div>   
+ 			
+ 		<div class="container "> 
+		    	<div class="row-4  mt-4">
+		    <div class="input-group mb-3">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="inputGroup-sizing-default">Name of the District of the child</span>
+			  </div>
+			  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			</div>  
+		</div>
+		</div>    
+
+		<div class="container "> 
+		    	<div class="row-4  mt-4">
+		    <div class="input-group mb-3">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="inputGroup-sizing-default">Aadhar Number of the child / Parent</span>
+			  </div>
+			  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			</div>  
+		</div>
+		</div>   
+ 
+
+		 <div class="container">  
+          	<div class="row-4 mt-4">   
+          <span class="input-group-text" id="inputGroup-sizing-default ">Area of Living
+          
+          	<div class="form-check form-check-inline pl-4">
+		  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+		  <label class="form-check-label" for="inlineRadio1">Slum</label>
+		</div>
+		<div class="form-check form-check-inline">
+		  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+		  <label class="form-check-label" for="inlineRadio2">Tribal</label>
+		</div> 
+
+		<div class="form-check form-check-inline">
+		  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+		  <label class="form-check-label" for="inlineRadio2">Migrant</label>
+		</div> 
+
+		<div class="form-check form-check-inline">
+		  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+		  <label class="form-check-label" for="inlineRadio2">Refugee</label>
+		</div>
+		
+          </span>
+          		
+          	</div>
+          </div> 
+
+          <div class="container "> 
+		    	<div class="row-4  mt-4">
+						    <div class="input-group">
+				  <div class="input-group-prepend">
+				    <span class="input-group-text">Occupation of the Parent</span>
+				  </div>
+				  <textarea class="form-control" aria-label="With textarea"></textarea>
+				</div>
+		</div>
+		</div>  
+
+		 <div class="container">  
+          	<div class="row-4 mt-4">   
+          <span class="input-group-text" id="inputGroup-sizing-default ">Socio Economic Status
+          
+          	<div class="form-check form-check-inline pl-4">
+		  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+		  <label class="form-check-label" for="inlineRadio1">APL</label>
+		</div>
+		<div class="form-check form-check-inline">
+		  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+		  <label class="form-check-label" for="inlineRadio2">BPL</label>
+		</div> 
+		</span> 
+		</div> 
+		</div>   
+
+
+		<div class="container "> 
+		    	<div class="row-4  mt-4">
+		    <div class="input-group mb-3">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="inputGroup-sizing-default">Name of Treatment Supporter</span>
+			  </div>
+			  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			</div>  
+		</div>
+		</div>   
+ 
+		<div class="container "> 
+		    	<div class="row-4  mt-4">
+		    <div class="input-group mb-3">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="inputGroup-sizing-default">Designation</span>
+			  </div>
+			  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			</div>  
+		</div>
+		</div>    
+
+		<div class="container "> 
+		    	<div class="row-4  mt-4">
+		    <div class="input-group mb-3">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="inputGroup-sizing-default">MobiLe Number</span>
+			  </div>
+			  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			</div>  
 		</div>
 		</div>   
 
 		<div class="container "> 
-		    	<div class="row  mt-4 inputf "> 
-		    		<div class="col-3 "></div>
+		    	<div class="row-4  mt-4">
 		    <div class="input-group mb-3">
 			  <div class="input-group-prepend">
-			    <span class="input-group-text" id="inputGroup-sizing-default">No. of presumptive TB cases for RadioLogical testing</span>
+			    <span class="input-group-text" id="inputGroup-sizing-default">Initial Home Visit By</span>
 			  </div>
 			  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-			</div>   
+			</div>  
 		</div>
 		</div>   
+
+		 <div class="container "> 
+		    	<div class="row-4  mt-4">
+		    <div class="input-group mb-3">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="inputGroup-sizing-default">Date of Home Visit</span>
+			  </div>
+			  <input type="text" placeholder="DD/MM/YYYY" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			</div>  
+		</div>
+		</div>    
+
+		<div class="container">  
+          	<div class="row-4 mt-4">   
+          <span class="input-group-text" id="inputGroup-sizing-default ">Type of Treatment
+          
+          	<div class="form-check form-check-inline pl-4">
+		  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+		  <label class="form-check-label" for="inlineRadio1">DOT</label>
+		</div>
+		<div class="form-check form-check-inline">
+		  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+		  <label class="form-check-label" for="inlineRadio2">Family DOT</label>
+		</div> 
+
+		<div class="form-check form-check-inline">
+		  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+		  <label class="form-check-label" for="inlineRadio2">ICT Supported</label>
+		</div>
+          </span>	
+          	</div>
+          </div> 
+
+           <div class="container "> 
+		    	<div class="row-4  mt-4">
+		    <div class="input-group mb-3">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="inputGroup-sizing-default">Date of Onset of First Symptom</span>
+			  </div>
+			  <input type="text" placeholder="DD/MM/YYYY" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			</div>  
+		</div>
+		</div>   
+
+
+           <div class="container "> 
+		    	<div class="row-4  mt-4">
+		    <div class="input-group mb-3">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="inputGroup-sizing-default">HCP visited before diagnosis</span>
+			  </div>
+			  <input type="text" placeholder="" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			</div>  
+		</div>
+		</div>   
+
+		<div class="container">  
+          	<div class="row-4 mt-4">   
+          <span class="input-group-text" id="inputGroup-sizing-default ">Disease Classification 
+          
+          	<div class="form-check form-check-inline pl-4">
+		  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+		  <label class="form-check-label" for="inlineRadio1">Pulmonary</label>
+		</div>
+		<div class="form-check form-check-inline">
+		  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+		  <label class="form-check-label" for="inlineRadio2">Extra Pulmonary</label>
+		</div> 
+          </span>	
+          	</div>
+          </div>  
+		<div class="container"> 
+			<div class="row-4 mt-4">  
+				<span class="input-group-text" id="inputGroup-sizing-default  mr-3">Type of Patient
+				<select class="custom-select pl-3 ml-3">
+				  <option selected>None Selected</option>
+				  <option value="public">New</option>
+				  <option value="private">Recurrent</option> 
+				  <option value="private">Transfer in</option> 
+				  <option value="private">Rx Failure</option> 
+				  <option value="private">RX</option> 
+				  <option value="private">Others</option> 
+				  <option value="private">Previously treated after LFU</option> 
+				</select>  
+			</span>
+			</div> 
+		</div> 
+           
+
+        <div class="container"> 
+			<div class="row-4 mt-4">  
+				<span class="input-group-text" id="inputGroup-sizing-default  mr-3">Basis Of Diagnosis
+				<select class="custom-select pl-3 ml-3">
+				  <option selected>None Selected</option>
+				  <option value="public">Microbiologically Confirmed</option>
+				  <option value="private">Clinical TB</option>
+				</select>  
+			</span>
+			</div> 
+		</div> 
+          
+		 <div class="container">  
+          	<div class="row-4 mt-4">   
+          <span class="input-group-text" id="inputGroup-sizing-default ">Diagnosis Done facility type
+          
+          	<div class="form-check form-check-inline pl-4">
+		  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+		  <label class="form-check-label" for="inlineRadio1">Public</label>
+		</div>
+		<div class="form-check form-check-inline">
+		  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+		  <label class="form-check-label" for="inlineRadio2">Private</label>
+		</div>
+          </span>	
+          	</div>
+          </div> 
+
+         <div class="container border-secondary"> 
+         	<div class="container">  
+		          	<div class="row-4 mt-4">   
+		          <span class="input-group-text" id="inputGroup-sizing-default ">H/O of previous ATT
+		          
+		          	<div class="form-check form-check-inline pl-4">
+				  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+				  <label class="form-check-label" for="inlineRadio1">YES</label>
+				</div>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+				  <label class="form-check-label" for="inlineRadio2">NO</label>
+				</div>
+		          </span>	
+		          	</div>
+		          </div> 
+
+		          <div class="container"> 
+		          		<div class="row-4 mt-4">  
+		          			<div class="col-4 pl-0"> 
+							    <div class="input-group mb-3 ">
+								  <div class="input-group-prepend">
+								    <span class="input-group-text " id="inputGroup-sizing-default">No of months of Treatment</span>
+								  </div>
+								  <input type="text" placeholder="" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+								</div>    
+		          			</div> 
+
+		          			<div class="col-4 pl-0"> 
+							    <div class="input-group mb-3 ">
+								  <div class="input-group-prepend">
+								    <span class="input-group-text " id="inputGroup-sizing-default">No of months since last episode</span>
+								  </div>
+								  <input type="text" placeholder="" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+								</div>    
+		          			</div> 
+
+		          		</div>
+		          </div>
+
+		          	<div class="container">  
+		          	<div class="row-4 mt-4">   
+		          <span class="input-group-text" id="inputGroup-sizing-default ">Source of Treatment
+		          
+		          	<div class="form-check form-check-inline pl-4">
+				  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+				  <label class="form-check-label" for="inlineRadio1">Public</label>
+				</div>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+				  <label class="form-check-label" for="inlineRadio2">Private</label>
+				</div>
+		          </span>	
+		          	</div>
+		          </div>  
+
+		           <div class="container "> 
+				    	<div class="row-4  mt-4">
+				    <div class="input-group mb-3">
+					  <div class="input-group-prepend">
+					    <span class="input-group-text" id="inputGroup-sizing-default">Treatment Regimen</span>
+					  </div>
+					  <input type="text" placeholder="" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+					</div>  
+				</div>
+				</div> 
+
+			</div> 
+	<div class="container border border-secondary"> <legend>HIV Related Info</legend>  
+
+			<div class="container"> 
+				<div class="row-4 mt-4">  
+					 
+						<span class="input-group-text" id="inputGroup-sizing-default  mr-3">HIV Status
+				<select class="custom-select pl-3 ml-3">
+				  <option selected>Unknowm</option>
+				  <option value="public">Reactive</option>
+				  <option value="private">NR</option>
+				</select>  
+			</span>
+			</div> 
+		</div>  
+
 		<div class="container "> 
-		    	<div class="row  mt-4 inputf ">
-		<button type="button" class="btn btn-primary">Submit</button>
+		    	<div class="row-4  mt-4">
+		    <div class="input-group mb-3">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="inputGroup-sizing-default">Date of Testing</span>
+			  </div>
+			  <input type="text" placeholder="DD/MM/YYYY" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			</div>  
 		</div>
+		</div>   
+
+		<div class="container"> 
+				<div class="row-4 mt-4">  
+					 
+						<div class="input-group mb-3">
+						  <div class="input-group-prepend">
+						    <span class="input-group-text" id="inputGroup-sizing-default">PID Number</span>
+						  </div>
+						  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+						</div> 
+
+			</div> 
+		</div>  
+
+		<div class="container "> 
+		    	<div class="row-4  mt-4">
+		    <div class="input-group mb-3">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="inputGroup-sizing-default">CPT initiation Date</span>
+			  </div>
+			  <input type="text" placeholder="DD/MM/YYYY" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			</div>  
 		</div>
+		</div> 
+
+		<div class="container mb-4">  
+          	<div class="row-4 mt-4">   
+          <span class="input-group-text" id="inputGroup-sizing-default ">Initiated on ART 
+          
+          	<div class="form-check form-check-inline pl-4">
+		  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+		  <label class="form-check-label" for="inlineRadio1">YES</label>
+		</div>
+		<div class="form-check form-check-inline">
+		  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+		  <label class="form-check-label" for="inlineRadio2">NO</label>
+		</div>
+		
+          </span>
+          		
+          	</div>
+          </div>  
+
+          <div class="container "> 
+		    	<div class="row-4  mt-4">
+		    <div class="input-group mb-3">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="inputGroup-sizing-default">Date of ART initiation</span>
+			  </div>
+			  <input type="text" placeholder="DD/MM/YYYY" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			</div>  
+		</div>
+		</div>  
+
+		<div class="container"> 
+				<div class="row-4 mt-4">  
+					 
+						<div class="input-group mb-3">
+						  <div class="input-group-prepend">
+						    <span class="input-group-text" id="inputGroup-sizing-default">ART Number</span>
+						  </div>
+						  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+						</div> 
+
+			</div> 
+		</div>     
+
+	</div>
+     	
+
+		<div class="container border border-secondary mt-4"> <legend>Diabetes Related Info</legend>  
+
+			<div class="container"> 
+				<div class="row-4 mt-4">  
+					 
+						<span class="input-group-text" id="inputGroup-sizing-default  mr-3">Diabetes Status
+				<select class="custom-select pl-3 ml-3">
+				  <option selected>Unknowm</option>
+				  <option value="public">Diabetic</option>
+				  <option value="private">Non Diabetic</option>
+				</select>  
+			</span>
+			</div> 
+		</div>  
+
+		<div class="container"> 
+				<div class="row-4 mt-4">  
+					 
+						<div class="input-group mb-3">
+						  <div class="input-group-prepend">
+						    <span class="input-group-text" id="inputGroup-sizing-default">RBS</span>
+						  </div>
+						  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+						</div> 
+
+			</div> 
+		</div>   
+
+		<div class="container"> 
+				<div class="row-4 mt-4">  
+					 
+						<div class="input-group mb-3">
+						  <div class="input-group-prepend">
+						    <span class="input-group-text" id="inputGroup-sizing-default">FBS</span>
+						  </div>
+						  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+						</div> 
+
+			</div> 
+		</div>   
+
+		<div class="container">  
+          	<div class="row-4 mt-4">   
+          <span class="input-group-text" id="inputGroup-sizing-default ">Initiated on ADT
+          
+          	<div class="form-check form-check-inline pl-4">
+		  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+		  <label class="form-check-label" for="inlineRadio1">YES</label>
+		</div>
+		<div class="form-check form-check-inline">
+		  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+		  <label class="form-check-label" for="inlineRadio2">NO</label>
+		</div>
+		
+          </span>
+          		
+          	</div>
+          </div>  
+
+          <div class="container "> 
+		    	<div class="row-4  mt-4">
+		    <div class="input-group mb-3">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="inputGroup-sizing-default">Date Of Initiation</span>
+			  </div>
+			  <input type="text" placeholder="DD/MM/YYYY" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			</div>  
+		</div>
+		</div> 
+
+
+		<div class="container"> 
+				<div class="row-4 mt-4">  
+					 
+						<div class="input-group mb-3">
+						  <div class="input-group-prepend">
+						    <span class="input-group-text" id="inputGroup-sizing-default">ADT Number</span>
+						  </div>
+						  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+						</div> 
+
+			</div> 
+		</div> 
+
+		 <div class="container mb-4"> 
+		    	<div class="row-4  mt-4">
+						    <div class="input-group">
+				  <div class="input-group-prepend">
+				    <span class="input-group-text">Other co-morbidity details</span>
+				  </div>
+				  <textarea class="form-control" aria-label="With textarea"></textarea>
+				</div>
+		</div>
+		</div>    
+		
+	</div>   
+
+	<div class="container">  
+          	<div class="row-4 mt-4">   
+          <span class="input-group-text" id="inputGroup-sizing-default ">TB Treatment
+          
+          	<div class="form-check form-check-inline pl-4">
+		  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+		  <label class="form-check-label" for="inlineRadio1">DS-TB</label>
+		</div>
+		<div class="form-check form-check-inline">
+		  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+		  <label class="form-check-label" for="inlineRadio2">DR-TB</label>
+		</div> 
+
+		<div class="form-check form-check-inline">
+		  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+		  <label class="form-check-label" for="inlineRadio2">Not initiated</label>
+		</div>
+		
+          </span> 
+
+          <span class="input-group-text mt-2" id="inputGroup-sizing-default ">Treatment Facility Type
+          
+          	<div class="form-check form-check-inline pl-4">
+		  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+		  <label class="form-check-label" for="inlineRadio1">Public</label>
+		</div>
+		<div class="form-check form-check-inline">
+		  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+		  <label class="form-check-label" for="inlineRadio2">Private</label>
+		</div>
+		
+          </span>
+          		
+          	</div>
+          </div>  
+
+			<div class="container "> 
+		    	<div class="row-4  mt-4">
+		    <div class="input-group mb-3">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="inputGroup-sizing-default">TB Initiation Date</span>
+			  </div>
+			  <input type="text" placeholder="DD/MM/YYYY" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			</div>  
+		</div>
+		</div>     
+
+		<div class="container "> 
+		    	<div class="row-4  mt-4">
+		    <div class="input-group mb-3">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="inputGroup-sizing-default">Date of Initiation of IP Phase</span>
+			  </div>
+			  <input type="text" placeholder="DD/MM/YYYY" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			</div>  
+		</div>
+		</div>             
+
+    <div class="container"> 
+				<div class="row-4 mt-4">  
+					 
+						<span class="input-group-text" id="inputGroup-sizing-default  mr-3">Status of TB Treatment
+				<select class="custom-select pl-3 ml-3">
+				  <option selected>None Selected</option>
+				  <option value="public">Initiated on 1st Line treatment in same health facility</option> 
+				  <option value="public">Initiated on 2nd Line treatment in same health facility</option>
+				  <option value="private">Initiated treatment outside health facility / Outside RNTCP </option>
+				</select>  
+			</span> 
+
+
+			</div> 
+		</div> 
+
+		<div class="container"> 
+				<div class="row-4 mt-4">  
+					 
+						<span class="input-group-text" id="inputGroup-sizing-default  mr-3">Dosage Frequency
+				<select class="custom-select pl-3 ml-3">
+				  <option selected>None Selected</option>
+				  <option value="public">Daily</option> 
+				  <option value="public">Intermittent</option>
+				</select>  
+			</span> 
+
+
+			</div> 
+		</div> 
+
+		<div class="container"> 
+				<div class="row-4 mt-4">  
+					 
+						<span class="input-group-text" id="inputGroup-sizing-default  mr-3">Drug Formulations
+				<select class="custom-select pl-3 ml-3">
+				  <option selected>None Selected</option>
+				  <option value="public">FDC</option> 
+				  <option value="public">Combipack</option> 
+				  <option value="public">Loose Drugs</option>
+				</select>  
+			</span> 
+			</div> 
+		</div>   
+
+		 <div class="container "> 
+		    	<div class="row-4  mt-4">
+						    <div class="input-group">
+				  <div class="input-group-prepend">
+				    <span class="input-group-text">Type of Regimen</span>
+				  </div>
+				  <textarea class="form-control" aria-label="With textarea"></textarea>
+				</div>
+		</div>
+		</div>  
+
+		<div class="container"> 
+				<div class="row-4 mt-4">  
+					 
+						<span class="input-group-text" id="inputGroup-sizing-default  mr-3">Drug Package
+				<select class="custom-select pl-3 ml-3">
+				  <option selected>None Selected</option>
+				  <option value="public">PWB</option> 
+				  <option value="public">Strips</option> 
+				</select>  
+			</span> 
+			</div> 
+		</div>    
+
+		<div class="container"> 
+				<div class="row-4 mt-4">  
+					 
+						<span class="input-group-text" id="inputGroup-sizing-default  mr-3">Weight Band
+				<select class="custom-select pl-3 ml-3">
+				  <option selected>None Selected</option>
+				  <option value="public">4-7 kgs</option> 
+				  <option value="public">8-11 kgs</option>  
+				  <option value="public">12-15 kgs</option> 
+				  <option value="public">16-24 kgs</option> 
+				  <option value="public">24-29 kgs</option>   
+				</select>  
+			</span> 
+			</div> 
+		</div> 
+
+		<div class="container border border-secondary mt-4"><legend>Follow-up</legend>  
+
+			<div class="container "> 
+		    	<div class="row-4  mt-4"> 
+		    		<h5>Pre Treatment</h5>
+		    <div class="input-group mb-3">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="inputGroup-sizing-default">Date of Specimen Collected</span>
+			  </div>
+			  <input type="text" placeholder="DD/MM/YYYY" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			</div>  
+		</div>
+		</div>  
+
+		<div class="container "> 
+		    	<div class="row-4  mt-4"> 
+		    <div class="input-group mb-3">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="inputGroup-sizing-default">CBNAAT test done by facility name</span>
+			  </div>
+			  <input type="text" placeholder="Name of Facility" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			</div>  
+		</div>
+		</div>  
+
+		<div class="container"> 
+				<div class="row-4 mt-4">  
+					 
+						<span class="input-group-text" id="inputGroup-sizing-default  mr-3">Smear Result
+				<select class="custom-select pl-3 ml-3">
+				  <option selected>None Selected</option>
+				  <option value="public">Detected</option> 
+				  <option value="public">Not Detected</option>  
+				  <option value="public">NA</option>
+				</select>  
+			</span> 
+			</div> 
+		</div> 
+
+		<div class="container "> 
+		    	<div class="row-4  mt-4"> 
+		    <div class="input-group mb-3">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="inputGroup-sizing-default">DST Result</span>
+			  </div>
+			  <input type="text" placeholder="" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			</div>  
+		</div>
+		</div> 
+
+		<div class="container "> 
+		    	<div class="row-4  mt-4"> 
+		    		<h5>End of IP - Date</h5>
+		    <div class="input-group mb-3">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="inputGroup-sizing-default">Date of Specimen Collected</span>
+			  </div>
+			  <input type="text" placeholder="DD/MM/YYYY" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			</div>  
+		</div>
+		</div> 
+
+		<div class="container "> 
+		    	<div class="row-4  mt-4"> 
+		    <div class="input-group mb-3">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="inputGroup-sizing-default">CBNAAT test done by facility name</span>
+			  </div>
+			  <input type="text" placeholder="Name of Facility" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			</div>  
+		</div>
+		</div>    
+  
+ 
+    
+		<div class="container"> 
+				<div class="row-4 mt-4">  
+					 
+						<span class="input-group-text" id="inputGroup-sizing-default  mr-3">Smear Result
+				<select class="custom-select pl-3 ml-3">
+				  <option selected>None Selected</option>
+				  <option value="public">Detected</option> 
+				  <option value="public">Not Detected</option>  
+				  <option value="public">NA</option>
+				</select>  
+			</span> 
+			</div> 
+		</div> 
+
+		<div class="container "> 
+		    	<div class="row-4  mt-4"> 
+		    <div class="input-group mb-3">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="inputGroup-sizing-default">DST Result</span>
+			  </div>
+			  <input type="text" placeholder="" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			</div>  
+		</div>
+		</div>  
+
+		<div class="container "> 
+		    	<div class="row-4  mt-4"> 
+		    		<h5>End of Treatment - date</h5>
+		    <div class="input-group mb-3">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="inputGroup-sizing-default">Date of Specimen Collected</span>
+			  </div>
+			  <input type="text" placeholder="DD/MM/YYYY" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			</div>  
+		</div>
+		</div>  
+
+		<div class="container "> 
+		    	<div class="row-4  mt-4"> 
+		    <div class="input-group mb-3">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="inputGroup-sizing-default">CBNAAT test done by facility name</span>
+			  </div>
+			  <input type="text" placeholder="Name of Facility" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			</div>  
+		</div>
+		</div>  
+
+		<div class="container"> 
+				<div class="row-4 mt-4">  
+					 
+						<span class="input-group-text" id="inputGroup-sizing-default  mr-3">Smear Result
+				<select class="custom-select pl-3 ml-3">
+				  <option selected>None Selected</option>
+				  <option value="public">Detected</option> 
+				  <option value="public">Not Detected</option>  
+				  <option value="public">NA</option>
+				</select>  
+			</span> 
+			</div> 
+		</div> 
+
+		<div class="container "> 
+		    	<div class="row-4  mt-4"> 
+		    <div class="input-group mb-3">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="inputGroup-sizing-default">DST Result</span>
+			  </div>
+			  <input type="text" placeholder="" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			</div>  
+		</div>
+		</div>  
+
+		<div class="container "> 
+		    	<div class="row-4  mt-4"> 
+		    		<h5>Treatment Outcome</h5>
+		    <div class="input-group mb-3">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="inputGroup-sizing-default">Date of Treatment Outcome</span>
+			  </div>
+			  <input type="text" placeholder="DD/MM/YYYY" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			</div>  
+		</div>
+		</div>  
+		<div class="container mb-4"> 
+				<div class="row-4 mt-4">  
+					 
+						<span class="input-group-text" id="inputGroup-sizing-default  mr-3">Outcome of Treatment 
+				<select class="custom-select pl-3 ml-3">
+				  <option selected>None Selected</option>
+				  <option value="public">Cured</option> 
+				  <option value="public">Treatment Completed</option>  
+				  <option value="public">Died</option> 
+				  <option value="public">Failure</option> 
+				  <option value="public">LFU</option>
+				  <option value="public">NE or TE</option>
+				</select>  
+			</span> 
+			</div> 
+		</div> 
+	</div>   
+
+	<div class="container border border-secondary mt-4"><legend>Post Treatment follow-up</legend> 
+
+			<div class="container"> 
+				<div class="row-4 mt-4">  
+					  <h5>At 6 Months</h5>
+						<div class="input-group mb-3">
+						  <div class="input-group-prepend">
+						    <span class="input-group-text" id="inputGroup-sizing-default">Follow up Date</span>
+						  </div>
+						  <input type="text" placeholder="DD/MM/YYYY" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+						</div>  
+			</div> 
+		</div>  
+
+		<div class="container">  
+			<div class="row-4 mt-4">  
+			 <span class="input-group-text pr-2" id="inputGroup-sizing-default">Symptoms 
+			 		<div class="form-check form-check-inline pl-2">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+				  <label class="form-check-label" for="inlineCheckbox1">C</label>
+				</div>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+				  <label class="form-check-label" for="inlineCheckbox2">F</label>
+				</div> 
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+				  <label class="form-check-label" for="inlineCheckbox2">H</label>
+				</div> 
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+				  <label class="form-check-label" for="inlineCheckbox2">W</label>
+				</div> 
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+				  <label class="form-check-label" for="inlineCheckbox2">N</label>
+				</div> 
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+				  <label class="form-check-label" for="inlineCheckbox2">O</label>
+				</div> 
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+				  <label class="form-check-label" for="inlineCheckbox2">NS</label>
+				</div>
+				
+			 </span> 
+				
+			</div>
+		</div> 
+
+		<div class="container mb-4"> 
+				<div class="row-4 mt-4">  
+						<span class="input-group-text" id="inputGroup-sizing-default  mr-3">CXR 
+				<select class="custom-select pl-3 ml-3">
+				  <option selected>None Selected</option>
+				  <option value="public">Normal</option> 
+				  <option value="public">Abnormal Consistent With TB</option>  
+				</select>  
+			</span> 
+			</div> 
+		</div>   
+
+		<div class="container mb-4"> 
+				<div class="row-4 mt-4">  
+						<span class="input-group-text" id="inputGroup-sizing-default  mr-3">Smear 
+				<select class="custom-select pl-3 ml-3">
+				  <option selected>None Selected</option>
+				  <option value="public">Detected </option> 
+				  <option value="public">Not Detected</option>  
+				</select>  
+			</span> 
+			</div> 
+		</div>  
+
+		<div class="container"> 
+				<div class="row-4 mt-4">  
+					 
+						<div class="input-group mb-3">
+						  <div class="input-group-prepend">
+						    <span class="input-group-text" id="inputGroup-sizing-default">Culture</span>
+						  </div>
+						  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+						</div> 
+
+			</div> 
+		</div>  
+
+
+			<div class="container"> 
+				<div class="row-4 mt-4">  
+					  <h5>At 12 Months</h5>
+						<div class="input-group mb-3">
+						  <div class="input-group-prepend">
+						    <span class="input-group-text" id="inputGroup-sizing-default">Follow up Date</span>
+						  </div>
+						  <input type="text" placeholder="DD/MM/YYYY" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+						</div>  
+			</div> 
+		</div>  
+
+		<div class="container">  
+			<div class="row-4 mt-4">  
+			 <span class="input-group-text pr-2" id="inputGroup-sizing-default">Symptoms 
+			 		<div class="form-check form-check-inline pl-2">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+				  <label class="form-check-label" for="inlineCheckbox1">C</label>
+				</div>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+				  <label class="form-check-label" for="inlineCheckbox2">F</label>
+				</div> 
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+				  <label class="form-check-label" for="inlineCheckbox2">H</label>
+				</div> 
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+				  <label class="form-check-label" for="inlineCheckbox2">W</label>
+				</div> 
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+				  <label class="form-check-label" for="inlineCheckbox2">N</label>
+				</div> 
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+				  <label class="form-check-label" for="inlineCheckbox2">O</label>
+				</div> 
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+				  <label class="form-check-label" for="inlineCheckbox2">NS</label>
+				</div>
+				
+			 </span> 
+				
+			</div>
+		</div> 
+
+		<div class="container mb-4"> 
+				<div class="row-4 mt-4">  
+						<span class="input-group-text" id="inputGroup-sizing-default  mr-3">CXR 
+				<select class="custom-select pl-3 ml-3">
+				  <option selected>None Selected</option>
+				  <option value="public">Normal</option> 
+				  <option value="public">Abnormal Consistent With TB</option>  
+				</select>  
+			</span> 
+			</div> 
+		</div>   
+
+		<div class="container mb-4"> 
+				<div class="row-4 mt-4">  
+						<span class="input-group-text" id="inputGroup-sizing-default  mr-3">Smear 
+				<select class="custom-select pl-3 ml-3">
+				  <option selected>None Selected</option>
+				  <option value="public">Detected </option> 
+				  <option value="public">Not Detected</option>  
+				</select>  
+			</span> 
+			</div> 
+		</div>  
+
+		<div class="container"> 
+				<div class="row-4 mt-4">  
+					 
+						<div class="input-group mb-3">
+						  <div class="input-group-prepend">
+						    <span class="input-group-text" id="inputGroup-sizing-default">Culture</span>
+						  </div>
+						  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+						</div> 
+
+			</div> 
+		</div>  
+
+
+			<div class="container"> 
+				<div class="row-4 mt-4">  
+					  <h5>At 18 Months</h5>
+						<div class="input-group mb-3">
+						  <div class="input-group-prepend">
+						    <span class="input-group-text" id="inputGroup-sizing-default">Follow up Date</span>
+						  </div>
+						  <input type="text" placeholder="DD/MM/YYYY" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+						</div>  
+			</div> 
+		</div>  
+
+		<div class="container">  
+			<div class="row-4 mt-4">  
+			 <span class="input-group-text pr-2" id="inputGroup-sizing-default">Symptoms 
+			 		<div class="form-check form-check-inline pl-2">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+				  <label class="form-check-label" for="inlineCheckbox1">C</label>
+				</div>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+				  <label class="form-check-label" for="inlineCheckbox2">F</label>
+				</div> 
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+				  <label class="form-check-label" for="inlineCheckbox2">H</label>
+				</div> 
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+				  <label class="form-check-label" for="inlineCheckbox2">W</label>
+				</div> 
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+				  <label class="form-check-label" for="inlineCheckbox2">N</label>
+				</div> 
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+				  <label class="form-check-label" for="inlineCheckbox2">O</label>
+				</div> 
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+				  <label class="form-check-label" for="inlineCheckbox2">NS</label>
+				</div>
+				
+			 </span> 
+				
+			</div>
+		</div> 
+
+		<div class="container mb-4"> 
+				<div class="row-4 mt-4">  
+						<span class="input-group-text" id="inputGroup-sizing-default  mr-3">CXR 
+				<select class="custom-select pl-3 ml-3">
+				  <option selected>None Selected</option>
+				  <option value="public">Normal</option> 
+				  <option value="public">Abnormal Consistent With TB</option>  
+				</select>  
+			</span> 
+			</div> 
+		</div>   
+
+		<div class="container mb-4"> 
+				<div class="row-4 mt-4">  
+						<span class="input-group-text" id="inputGroup-sizing-default  mr-3">Smear 
+				<select class="custom-select pl-3 ml-3">
+				  <option selected>None Selected</option>
+				  <option value="public">Detected </option> 
+				  <option value="public">Not Detected</option>  
+				</select>  
+			</span> 
+			</div> 
+		</div>  
+
+		<div class="container"> 
+				<div class="row-4 mt-4">  
+					 
+						<div class="input-group mb-3">
+						  <div class="input-group-prepend">
+						    <span class="input-group-text" id="inputGroup-sizing-default">Culture</span>
+						  </div>
+						  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+						</div> 
+
+			</div> 
+		</div>  
+
+
+			<div class="container"> 
+				<div class="row-4 mt-4">  
+					  <h5>At 24 Months</h5>
+						<div class="input-group mb-3">
+						  <div class="input-group-prepend">
+						    <span class="input-group-text" id="inputGroup-sizing-default">Follow up Date</span>
+						  </div>
+						  <input type="text" placeholder="DD/MM/YYYY" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+						</div>  
+			</div> 
+		</div>  
+
+		<div class="container">  
+			<div class="row-4 mt-4">  
+			 <span class="input-group-text pr-2" id="inputGroup-sizing-default">Symptoms 
+			 		<div class="form-check form-check-inline pl-2">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+				  <label class="form-check-label" for="inlineCheckbox1">C</label>
+				</div>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+				  <label class="form-check-label" for="inlineCheckbox2">F</label>
+				</div> 
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+				  <label class="form-check-label" for="inlineCheckbox2">H</label>
+				</div> 
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+				  <label class="form-check-label" for="inlineCheckbox2">W</label>
+				</div> 
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+				  <label class="form-check-label" for="inlineCheckbox2">N</label>
+				</div> 
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+				  <label class="form-check-label" for="inlineCheckbox2">O</label>
+				</div> 
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+				  <label class="form-check-label" for="inlineCheckbox2">NS</label>
+				</div>
+				
+			 </span> 
+				
+			</div>
+		</div> 
+
+		<div class="container mb-4"> 
+				<div class="row-4 mt-4">  
+						<span class="input-group-text" id="inputGroup-sizing-default  mr-3">CXR 
+				<select class="custom-select pl-3 ml-3">
+				  <option selected>None Selected</option>
+				  <option value="public">Normal</option> 
+				  <option value="public">Abnormal Consistent With TB</option>  
+				</select>  
+			</span> 
+			</div> 
+		</div>   
+
+		<div class="container mb-4"> 
+				<div class="row-4 mt-4">  
+						<span class="input-group-text" id="inputGroup-sizing-default  mr-3">Smear 
+				<select class="custom-select pl-3 ml-3">
+				  <option selected>None Selected</option>
+				  <option value="public">Detected </option> 
+				  <option value="public">Not Detected</option>  
+				</select>  
+			</span> 
+			</div> 
+		</div>  
+
+		<div class="container"> 
+				<div class="row-4 mt-4">  
+					 
+						<div class="input-group mb-3">
+						  <div class="input-group-prepend">
+						    <span class="input-group-text" id="inputGroup-sizing-default">Culture</span>
+						  </div>
+						  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+						</div> 
+
+			</div> 
+		</div> 
+
+	</div>
+      
+      <div class="container mb-4"> 
+				<div class="row-4 mt-4">  
+						<span class="input-group-text" id="inputGroup-sizing-default  mr-3">DBT Status-Nutritional Support 
+				<select class="custom-select pl-3 ml-3">
+				  <option selected>Not Selected</option> 
+				  <option value="public"> Received </option> 
+				  <option value="public">Not Received </option> 
+				  <option value="public">Not Applied</option>  
+				</select>  
+			</span> 
+			</div> 
+		</div>   
+
+		<div class="container border border-secondary"><legend>In Case of Change in Address</legend>  
+
+			<div class="container"> 
+				<div class="row-4 mt-4">  
+					 
+						<div class="input-group mb-3">
+						  <div class="input-group-prepend">
+						    <span class="input-group-text" id="inputGroup-sizing-default">Current State</span>
+						  </div>
+						  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+						</div> 
+
+			</div> 
+		</div>  
+
+		<div class="container"> 
+				<div class="row-4 mt-4">  
+					 
+						<div class="input-group mb-3">
+						  <div class="input-group-prepend">
+						    <span class="input-group-text" id="inputGroup-sizing-default">Current District</span>
+						  </div>
+						  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+						</div> 
+
+			</div> 
+		</div>  
+
+		<div class="container"> 
+				<div class="row-4 mt-4">  
+					 
+						<div class="input-group mb-3">
+						  <div class="input-group-prepend">
+						    <span class="input-group-text" id="inputGroup-sizing-default">Current TBU name</span>
+						  </div>
+						  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+						</div> 
+
+			</div> 
+		</div> 
+
+		<div class="container"> 
+				<div class="row-4 mt-4">  
+					 
+						<div class="input-group mb-3">
+						  <div class="input-group-prepend">
+						    <span class="input-group-text" id="inputGroup-sizing-default">Current PHI name</span>
+						  </div>
+						  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+						</div> 
+
+			</div> 
+		</div>  
+		
+	</div>
+
+		
+		
+
+		
+		<div class="container mb-7 buttoncenter" > 
+		    	<div class="row  mt-4 mb-3 inputf ">
+		<button type="button" class="btn btn-warning p-2 btn-lg">Submit</button>
+		</div> 
+		<br/> 
+		<br/> 
+
+		</div> 
+
 
 
 </div>
@@ -285,6 +1537,6 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  
   </body>
 </html>
